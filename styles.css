@@ -1,0 +1,166 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+html {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+body {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    line-height: 1;
+    min-width: 350px;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+@media(max-width: 955px) {
+    .header_support {
+        display: none;
+    }
+    .bi-cart3 {
+        padding-left: 1px;
+    }
+    .bi-person-circle {
+        padding-left: 1px;
+    }
+}
+@media(max-width: 898px) {
+    .header_shop {
+        display: none;
+    }
+    .bi_mobile {
+        display: none;
+    }
+}
+@media(max-width: 832px) {
+    .header_accessories {
+        display: none;
+    }
+}
+
+
+.header {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+@media(max-width: 727px) {
+    .header {
+        display: none;
+    }
+}
+.header_mobile {
+    display: none;
+}
+@media(max-width: 727px) {
+    .header_mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 10px;
+    }
+}
+
+.header_logo {
+    width: 130px;
+}
+.header_layer {
+    display: flex;
+    align-items: center;
+}
+.header_product::before {
+    margin-left: 30px;
+    border-left: 2px solid #000;
+    height: 24px;
+    content: " ";
+}
+
+.header_main {
+    padding-left: 10px;
+}
+.header_main:hover {
+    border-bottom: 2px solid #000;
+}
+.header_user {
+    padding-left: 20px;
+}
+a {
+    text-decoration: none;
+}
+.h1 {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+span {
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.bi-cart3 {
+    padding-left: 10px;
+}
+.bi-person-circle {
+    padding-left: 10px;
+}
+.bi-cart3_mobile {
+    padding-right: 20px;
+}
+.bi-search_mobile {
+    padding-left: 20px;
+}
+.tooltip {
+      position: fixed;
+      left: 1100px;
+      padding: 5px 5px;
+      border: 1px solid #b3c9ce;
+      border-radius: 4px;
+      text-align: center;
+      font: italic 14px/1.3 sans-serif;
+      color: #333;
+      background: #fff;
+      box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+    }
